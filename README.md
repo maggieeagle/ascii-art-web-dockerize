@@ -11,7 +11,11 @@ Orel Margarita @maggieeagle
 ## Usage
 
  - Download the repository
- - Run container based on `dockerfile` image with `sudo docker run -p 8080 dockerifle`
- - Open [http://0.0.0.0:49155/](http://0.0.0.0:49155/) in browser
- - Have fun!
+ - Create a container based on `dockerfile` image with `sudo docker build -t dockerfile .`
+ - Run new container with `sudo docker run -p 8080 dockerifle`
+ - Open new terminal in the same folder
+ - Run `sudo docker ps -a`
+ - Look at which port the server was started, in my case it shows `0.0.0.0:49161->8080/tcp`
+ - Open this port in browser - in my case `http://0.0.0.0:49161/`
+ - You made a great job, now have fun!
 
