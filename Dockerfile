@@ -1,7 +1,7 @@
-FROM golang:latest
+FROM golang:1.17-alpine3.15 
 
-WORKDIR /go/delivery
-COPY ./ ./
-EXPOSE 8080
-RUN go build -o main.go
-CMD ("./main.go")
+LABEL maintainer="Orel Margarita @maggieeagle <oryol.margo@gmail.com>"
+WORKDIR /app                          
+COPY . .                             
+RUN go build -o application main.go   
+CMD [ "/app/application" ]      
