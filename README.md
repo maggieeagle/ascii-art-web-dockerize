@@ -1,8 +1,63 @@
-# Ascii-art-web-dockerize
+# Ascii-art-web
 
 ## Description
 
-Ascii-art-web-dockerize is a program with [ascii-art-web-export-file](https://01.kood.tech/git/maggieeagle/ascii-art-export-file) functionality, which also can be run in docker container.
+Ascii-art-web is a server program with a web interface which converts input string in a graphic representation using ASCII in three styles.
+
+For example the string `Hello\nworld!` can be converted this three ways:
+- shadow style
+```                             
+_|    _|          _| _|          
+_|    _|   _|_|   _| _|   _|_|   
+_|_|_|_| _|_|_|_| _| _| _|    _| 
+_|    _| _|       _| _| _|    _| 
+_|    _|   _|_|_| _| _|   _|_|   
+                                 
+                                 
+                                                
+                                     _|       _| _| 
+_|      _|      _|   _|_|   _|  _|_| _|   _|_|_| _| 
+_|      _|      _| _|    _| _|_|     _| _|    _| _| 
+  _|  _|  _|  _|   _|    _| _|       _| _|    _|    
+    _|      _|       _|_|   _|       _|   _|_|_| _| 
+
+```
+- standard style
+```                             
+ _    _          _   _          
+| |  | |        | | | |         
+| |__| |   ___  | | | |   ___   
+|  __  |  / _ \ | | | |  / _ \  
+| |  | | |  __/ | | | | | (_) | 
+|_|  |_|  \___| |_| |_|  \___/  
+                                
+                                
+                           _       _   _  
+                          | |     | | | | 
+__      __   ___    _ __  | |   __| | | | 
+\ \ /\ / /  / _ \  | '__| | |  / _` | | | 
+ \ V  V /  | (_) | | |    | | | (_| | |_| 
+  \_/\_/    \___/  |_|    |_|  \__,_| (_) 
+                                                                                
+```
+- thinkertoy style
+```  
+                 
+o  o     o o     
+|  |     | |     
+O--O o-o | | o-o 
+|  | |-' | | | | 
+o  o o-o o o o-o 
+                 
+                 
+                           
+                  o    o o 
+                  |    | | 
+o   o   o o-o o-o |  o-O o 
+ \ / \ /  | | |   | |  |   
+  o   o   o-o o   o  o-o O 
+                           
+```
 
 ## Authors
 
@@ -15,19 +70,6 @@ Orel Margarita @maggieeagle
  - Download the repository
  - Run `./dockerize.sh`. This will create an image of the application with `ascii-art` tag and run the container.
  - Have fun!
-
-Useful functions:
- - To see the list of images run `sudo docker images`
- - To see the list of all containers run `sudo docker ps -a`
- - To start/stop container run `sudo docker start/stop container_name`
- - To remove container run `sudo docker rm container_name`
- - To clean your machine run `sudo docker system prune`
-
-If you feel tired to write `sudo` all the time give your user root permissions:
-
-    sudo groupadd docker
-    sudo usermod -aG docker username
-    su - username
 
     
 
